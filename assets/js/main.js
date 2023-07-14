@@ -4,6 +4,7 @@ import showcart from "./components/showCart.js";
 import products from "./components/products.js";
 import getProducts from "./helpers/getProducts.js";
 import cart from "./components/cart.js"
+import openModal from "./components/openModal.js";
 
 
 /* * UI Element */
@@ -26,3 +27,6 @@ const {db, printProducts} = products(await getProducts())
 
 cart(db, printProducts)
 
+/* Modal */
+
+openModal()
